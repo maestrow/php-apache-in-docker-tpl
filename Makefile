@@ -1,3 +1,6 @@
+build:
+	docker build -t flat-cms-review:latest ${PWD}
+
 up:
 	docker-compose up -d
 
