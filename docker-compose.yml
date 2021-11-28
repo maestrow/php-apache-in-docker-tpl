@@ -1,0 +1,11 @@
+version: "3.1"
+services:
+  www:
+    build: .
+    image: php-web:latest
+    container_name: php-web
+    ports: 
+      - "8003:80"
+    volumes:
+      - ./app:/var/www/html/
+    env_file: .env
